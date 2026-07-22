@@ -5,21 +5,21 @@
 class Kova < Formula
   desc "Kova CLI — align portfolios with investment strategies"
   homepage "https://kovatools.com"
-  version "0.8.3"
+  version "0.8.4"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.3/kova_0.8.3_darwin_amd64.tar.gz"
-      sha256 "d089dd0c1633b55277674ffc258a9d7827c3372e8e50c15611d0fa6d8ea4a804"
+      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.4/kova_0.8.4_darwin_amd64.tar.gz"
+      sha256 "0c509d8550f5701ad6fa954cdb8dddab140b55bd5af6c893f2c222ff9120b82e"
 
       define_method(:install) do
         bin.install "kova"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.3/kova_0.8.3_darwin_arm64.tar.gz"
-      sha256 "5e9ff4be995ead22759f5ab1498ae139ebc95a201a41a9b59d052937369bdc6b"
+      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.4/kova_0.8.4_darwin_arm64.tar.gz"
+      sha256 "987e3cea0abdf44b945b4f05c493c03391c538d22b40d12cca689026c16a43a7"
 
       define_method(:install) do
         bin.install "kova"
@@ -29,15 +29,15 @@ class Kova < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.3/kova_0.8.3_linux_amd64.tar.gz"
-      sha256 "f40ba4d66959221249f25ceebdb454e00aa754d8ef5c77f2a5d5c2e61284b1cd"
+      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.4/kova_0.8.4_linux_amd64.tar.gz"
+      sha256 "d4771772f694db467a74115493ef35d9670c326bc4a23320f9dcddc0810547dc"
       define_method(:install) do
         bin.install "kova"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.3/kova_0.8.3_linux_arm64.tar.gz"
-      sha256 "a2eda73b7d56fa07f0e0bd3217337a8420ba66a0f5655d57d8a42dbb025de85f"
+      url "https://github.com/kovatools/kova-releases/releases/download/v0.8.4/kova_0.8.4_linux_arm64.tar.gz"
+      sha256 "070e4a6c5acc97e303ec45c1ef8d2919f7b2d3ebd540bcc8f256eb91a0e31b9c"
       define_method(:install) do
         bin.install "kova"
       end
